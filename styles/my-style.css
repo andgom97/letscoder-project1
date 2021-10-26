@@ -1,0 +1,413 @@
+nav li{
+    display: inline;
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+#bg{
+    background-image: linear-gradient(to bottom, rgba(149, 165, 255, 0.52), rgba(117, 19, 93, 0.73)), url('../images/background-image.jpg');
+    width: 100%;
+    height: 970px;
+    background-size: cover;
+}
+
+@media (max-width: 1280px) {
+    #bg {
+        height: 1600px;
+    }
+    .options {
+      flex-direction: column;
+    }
+    .profiles {
+        flex-direction: column;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -34px 20px 20px 20px;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border:3px rgb(151, 49, 240) solid;
+    border-radius: 0rem 0rem 1rem 1rem;
+    padding-bottom: 20px;
+}
+
+.last-element {
+    margin-right: 35px;
+    margin-top: 30px;
+    font-size: 28px;
+    opacity: 0.8;
+}
+
+.last-element:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.element {
+    margin-top: 30px;
+    font-size: 28px;
+    opacity: 0.8;
+}
+
+.element:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.selected {
+    opacity: 1;
+}
+
+.roboto {
+    font-family: sans-serif;
+    color: white;
+    /* font-weight: 700; */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border: 2px rgb(36, 12, 247) solid;
+    border-radius: 100%;
+}
+
+.title {
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.subtitle-2 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-top: -10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    width: 400px;
+    border: 2px rgb(151, 49, 240) solid;
+    border-radius: 1rem;
+    box-shadow: 3px 3px rgba(39, 39, 208, 0.311);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.option:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    padding: 40px;
+    text-align: center;
+    border: 2px rgb(151, 49, 240) solid;
+    border-radius: 1rem;
+    box-shadow: 3px 3px rgba(39, 39, 208, 0.311);
+    gap: 20px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.profile:hover {
+    opacity: 1;
+    background-color: rgba(151, 49, 240, 0.324);
+    transform: scale(1.05);
+}
+
+.two-lines {
+    margin-top: 15px;
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-presentation {
+    text-align: center;
+}
+
+.photo {
+    width: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 2px rgb(151, 49, 240) solid;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    height: 60px;
+    width: 40px;
+    padding-right: 12px;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 60px;
+    width: 40px;
+    padding-right: 18px;
+    margin-left: -6px;
+}
+
+.weekday {
+    margin-bottom: 1px;
+}
+
+.month {
+    margin-top: 1px;
+}
+
+.border-right {
+    border-right: 2px rgb(151, 49, 240) solid;
+}
+
+.border-left {
+    border-right: 1px rgb(151, 49, 240) solid;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: -10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    margin-top: -20px;
+}
+
+.inscribirse {
+    height: 50px;
+    width: 90px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 3px rgb(151, 49, 240) solid;
+    box-shadow: 3px 3px rgba(39, 39, 208, 0.311);
+    transition: 0.3s;
+}
+
+.inscribirse:hover {
+    background-color: rgba(151, 49, 240, 0.324);
+}
+
+.tablas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.side_table-left {
+    margin-top: -350px;
+}
+
+.side_table-right {
+    margin-top: -520px;
+}
+
+.tabla {
+    border: 3px  rgb(151, 49, 240) solid;
+    box-shadow: 3px 3px rgba(39, 39, 208, 0.311);
+    border-radius: 0.5rem;
+    padding: 20px;
+}
+
+.tabla th {
+    height: 28px;
+    width: 100px;
+}
+
+.students {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.concepts {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 20px; */
+}
+
+.schedule-elements {
+
+}
+
+.line {
+    padding: 10px;
+    border: 3px rgb(151, 49, 240) dashed;
+}
+
+.division-line {
+    border-right: 1px white dashed;
+    margin-right: 5px;
+}
+
+.down-line {
+    border-bottom: 1px white dashed;
+    padding-bottom: 5px;
+    
+}
+
+dt {
+    font-size: 22px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.bootcamp-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell-form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+  
+.selec-option {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 30px;   
+}
+
+.left-form {
+    margin-left: 40px;
+}
+
+.right-form {
+
+}
+
+.form-bg {
+    width: 700px;
+    height: 700px;
+    border: 3px  rgb(151, 49, 240) solid;
+    border-radius: 1rem;
+    background-color: rgba(151, 49, 240, 0.509);
+}
+
+.send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

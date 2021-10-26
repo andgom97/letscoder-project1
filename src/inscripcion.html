@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/my-style.css">
+</head>
+<body style="margin: -20px;">
+    <div id="bg">
+        <!-- Navbar -->
+        <nav class="navbar roboto">
+            <ul class="elements">
+                <li class="element selected bold"><a href="home.html">Home</a></li>
+                <li class="element"><a href="conocenos.html">Conócenos</a></li>
+                <li class="element"><a href="info.html">Información</a></li>
+                <li class="last-element"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="body roboto">
+            <div class="form-bg">
+                <h3 class="subtitle-2">Inscribirse</h3>
+                <div class="form">
+                    <div class="left-form">
+                        <div class="personal-info">
+                            <h3>Información personal</h3>
+                            <!-- Nombre -->
+                            <div class="cell-form gap">
+                                <p>Nombre</p>
+                                <input type="text">
+                            </div>
+                            <!-- Apellidos -->
+                            <div class="cell-form">
+                                <p>Apellidos</p>
+                                <input type="text">
+                            </div>
+                            <!-- Población -->
+                            <div class="cell-form">
+                                <p>Población</p>
+                                <input type="text">
+                            </div>
+                            <!-- Edad -->
+                            <div class="cell-form">
+                                <p>Edad</p>
+                                <input type="number">
+                            </div>
+                            <!-- Zip -->
+                            <div class="cell-form">
+                                <p>Código postal</p>
+                                <input type="number">
+                            </div>
+                            <!-- Telefono -->
+                            <div class="cell-form">
+                                <p>Teléfono</p>
+                                <input type="tel">
+                            </div>
+                            <!-- Email -->
+                            <div class="cell-form">
+                                <p>Email</p>
+                                <input type="email">
+                            </div>
+                            <!-- Genero -->
+                            <div class="selec-option">
+                                <p>Género</p>
+                                <div class="cell-form">
+                                    <div class="selec-option">
+                                        <p>Hombre</p>
+                                        <input type="radio" name="genre">
+                                    </div>
+                                    <div class="selec-option">
+                                        <p>Mujer</p>
+                                        <input type="radio" name="genre">
+                                    </div>
+                                    <div class="selec-option">
+                                        <p>No binario</p>
+                                        <input type="radio" name="genre">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+    
+                    <div class="right-form">
+                        <div class="bootcamp-info">
+                            <h3>Información del curso</h3>
+                            <!-- Tipo de curso -->
+                            <div class="selec-option">
+                                <p>Opciones de curso</p>
+                                <div class="cell-form">
+                                    <div class="selec-option">
+                                        <p>Full-Time</p>
+                                        <input type="radio" name="option">
+                                    </div>
+                                    <div class="selec-option">
+                                        <p>Part-Time</p>
+                                        <input type="radio" name="option">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ciudades -->
+                            <div class="cell-form">
+                                <p>Ciudades</p>
+                                <select id="cities" name="cities">
+                                    <option disabled selected value></option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Cadiz">Cádiz</option>
+                                    <option value="Madrid">Madrid</option>
+                                    <option value="Zaragoza">Zaragoza</option>
+                                  </select>
+                            </div>
+            
+                            <!-- Fecha de comienzo -->
+                            <div class="selec-option">
+                                <p>Fecha de comienzo</p>
+                                <input type="date">
+                            </div>
+            
+                            <!-- Herramientas conocidas -->
+                            <div class="selec-option">
+                                <p>Herramientas conocidas</p>
+                                <div class="cell-form">
+                                    <div class="selec-option">
+                                        <input type="checkbox">
+                                        <p>HTML</p>
+                                    </div>
+                                    <div class="selec-option">
+                                        <input type="checkbox">
+                                        <p>CSS</p>
+                                    </div>
+                                    <div class="selec-option">
+                                        <input type="checkbox">
+                                        <p>Javascript</p>
+                                    </div>
+                                    <div class="selec-option">
+                                        <input type="checkbox">
+                                        <p>Git</p>
+                                    </div>
+                                    <div class="selec-option">
+                                        <input type="checkbox">
+                                        <p>Node</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Comentario</h3>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <button>Enviar</button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -15,7 +15,7 @@ nav li a{
     background-size: cover;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1250px) {
     #bg {
         height: 1600px;
     }
@@ -285,6 +285,7 @@ nav li a{
 
 .inscribirse:hover {
     background-color: rgba(151, 49, 240, 0.324);
+    border: 2px rgb(86, 13, 150) solid;
 }
 
 .tablas {
@@ -375,12 +376,14 @@ dt {
 .cell-form {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
 }
   
 .selec-option {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .form {
@@ -389,8 +392,16 @@ dt {
     gap: 30px;   
 }
 
+.section-title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
 .left-form {
     margin-left: 40px;
+    margin-top: -15px;
 }
 
 .right-form {
@@ -399,15 +410,94 @@ dt {
 
 .form-bg {
     width: 700px;
-    height: 700px;
-    border: 3px  rgb(151, 49, 240) solid;
+    height: 730px;
+    background-color: rgba(151, 49, 240, 0.324);
+    border: 2px rgb(151, 49, 240) solid;
     border-radius: 1rem;
-    background-color: rgba(151, 49, 240, 0.509);
+    box-shadow: 3px 3px rgba(39, 39, 208, 0.311);
 }
 
 .send {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
+}
+
+.send-button {
+    width: 90px;
+    height: 30px;
+}
+
+input {
+    border: 0;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
+    border-bottom: 2px rgb(151, 49, 240) solid;
+    transition: 0.3s;
+    color: white;
+}
+
+input:hover {
+    background-color: rgba(151, 49, 240, 0.324);
+}
+
+input:focus {
+    border-bottom: 2px rgb(86, 13, 150) solid;
+    background-color: rgba(151, 49, 240, 0.324);
+    outline: none;
+}
+
+select {
+    height: 30px;
+    width: 190px;
+    background-color: transparent;
+    border-radius: 0.1rem;
+    border: 2px rgb(151, 49, 240) solid;
+    transition: 0.3s;
+    color: white;
+    outline: none;
+}
+
+select:hover {
+    background-color: rgba(151, 49, 240, 0.324);
+}
+
+select:focus {
+    border: 2px rgb(86, 13, 150) solid;
+    background-color: rgba(151, 49, 240, 0.324);
+    outline: none;
+}
+
+textarea {
+    border: 0;
+    height: 40px;
+    width: 280px;
+    background-color: transparent;
+    border-radius: 0.1rem;
+    border-bottom: 2px rgb(151, 49, 240) solid;
+    transition: 0.3s;
+    color: white;
+    outline: none;
+}
+
+textarea:hover {
+    background-color: rgba(151, 49, 240, 0.324);
+}
+
+textarea:focus {
+    border-bottom: 2px rgb(86, 13, 150) solid;
+    background-color: rgba(151, 49, 240, 0.324);
+    outline: none;
+}
+
+.city {
+    background-color: transparent;
+    background-color: rgba(151, 49, 240, 0.77);
+}
+
+.age-fields {
+    width: 20px;
 }
 

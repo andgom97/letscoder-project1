@@ -24,7 +24,7 @@
                 <div class="form">
                     <div class="left-form">
                         <div class="personal-info">
-                            <h3>Información personal</h3>
+                            <h3 class="section-title">Información personal</h3>
                             <!-- Nombre -->
                             <div class="cell-form gap">
                                 <p>Nombre</p>
@@ -41,7 +41,7 @@
                                 <input type="text">
                             </div>
                             <!-- Edad -->
-                            <div class="cell-form">
+                            <div class="cell-form age-fields">
                                 <p>Edad</p>
                                 <input type="number">
                             </div>
@@ -62,19 +62,19 @@
                             </div>
                             <!-- Genero -->
                             <div class="selec-option">
-                                <p>Género</p>
+                                <p>¿Con qué genero te identificas?</p>
                                 <div class="cell-form">
                                     <div class="selec-option">
+                                        <input type="radio" name="genre">
                                         <p>Hombre</p>
-                                        <input type="radio" name="genre">
                                     </div>
-                                    <div class="selec-option">
+                                    <div class="selec-option">  
+                                        <input type="radio" name="genre">
                                         <p>Mujer</p>
-                                        <input type="radio" name="genre">
                                     </div>
                                     <div class="selec-option">
-                                        <p>No binario</p>
                                         <input type="radio" name="genre">
+                                        <p>No binario</p>
                                     </div>
                                 </div>
                             </div>  
@@ -83,42 +83,42 @@
     
                     <div class="right-form">
                         <div class="bootcamp-info">
-                            <h3>Información del curso</h3>
+                            <h3 class="section-title">Información del curso</h3>
                             <!-- Tipo de curso -->
                             <div class="selec-option">
-                                <p>Opciones de curso</p>
+                                <p>¿Qué tipo de curso preferirías?</p>
                                 <div class="cell-form">
                                     <div class="selec-option">
-                                        <p>Full-Time</p>
                                         <input type="radio" name="option">
+                                        <p>Full-Time</p>
                                     </div>
                                     <div class="selec-option">
-                                        <p>Part-Time</p>
                                         <input type="radio" name="option">
+                                        <p>Part-Time</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Ciudades -->
-                            <div class="cell-form">
-                                <p>Ciudades</p>
+                            <div class="selec-option">
+                                <p>¿En qué ciudad te gustaría hacerlo?</p>
                                 <select id="cities" name="cities">
-                                    <option disabled selected value></option>
-                                    <option value="Barcelona">Barcelona</option>
-                                    <option value="Cadiz">Cádiz</option>
-                                    <option value="Madrid">Madrid</option>
-                                    <option value="Zaragoza">Zaragoza</option>
+                                    <option disabled selected value class="city"></option>
+                                    <option value="Barcelona" class="city">Barcelona</option>
+                                    <option value="Cadiz" class="city">Cádiz</option>
+                                    <option value="Madrid" class="city">Madrid</option>
+                                    <option value="Zaragoza" class="city">Zaragoza</option>
                                   </select>
                             </div>
             
                             <!-- Fecha de comienzo -->
                             <div class="selec-option">
-                                <p>Fecha de comienzo</p>
+                                <p>¿Cuando te gustaría empezar?</p>
                                 <input type="date">
                             </div>
             
                             <!-- Herramientas conocidas -->
                             <div class="selec-option">
-                                <p>Herramientas conocidas</p>
+                                <p>¿Qué herramientas conoces?</p>
                                 <div class="cell-form">
                                     <div class="selec-option">
                                         <input type="checkbox">
@@ -143,18 +143,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div style="display: flex; align-items: center; flex-direction:column; margin-top: -15px;">
                             <h3>Comentario</h3>
                             <textarea></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="send">
-                    <button>Enviar</button>
+                    <button class="inscribirse">Enviar</button>
                 </div>
-                
             </div>
-
         </div>
     </div>
 </body>
